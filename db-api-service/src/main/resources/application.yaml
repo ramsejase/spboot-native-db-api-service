@@ -1,0 +1,25 @@
+spring:
+  application.name: db-api-service
+  main.allow-bean-definition-overriding: true
+
+mongo:
+  config:
+    -
+      name: financedb
+      host: 172.1.1.0
+      port: 27017
+      db: employeedb
+      user: finuser
+      secret: testabc12
+    -
+      name: coredb
+      host: localhost
+      port: 27017
+      db: streamauditdb
+      user: coreuser
+      secret: test123
+
+
+logging:
+  level:
+    root: info
